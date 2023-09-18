@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développer un Générateur de Citations</title>
+    <style>
+        body {
+            background-color: orangered;
+            display: block
+        }
+        body p{
+            background-color: white;
+            padding: 0%;
+            margin-top: 0%;
+            flex: auto;
+            text-align: center;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>les Citations aléatoires</h2>
+
+    <p>Cliquez sur le bouton pour générer une citation</p>
+        <button onclick="id1()">Générer une citation</button>
+    <p id="demo"></p>
+
+    <script>
+            var names=["J'AI APPRIS QUE LE COURAGE N'EST PAS L'ABSENCE DE PEUR, MAIS LA CAPACITÉ DE LA VAINCRE.","JE NE PERDS JAMAIS. SOIT JE GAGNE, SOIT J'APPRENDS.",
+"CELA SEMBLE TOUJOURS IMPOSSIBLE, JUSQU'À CE QU'ON LE FASSE.","LA PLUS GRANDE GLOIRE N’EST PAS DE NE JAMAIS TOMBER, MAIS DE SE RELEVER À CHAQUE CHUTE."
+,"AUCUN DE NOUS, EN AGISSANT SEUL, NE PEUT ATTEINDRE LE SUCCÈS.","ÊTRE LIBRE, CE N'EST PAS SEULEMENT SE DÉBARRASSER DE SES CHAÎNES ; C'EST VIVRE D'UNE FAÇON QUI RESPECTE ET RENFORCE LA LIBERTÉ DES AUTRES",
+"ÊTRE AMOUREUX EST UNE EXPÉRIENCE QUE CHAQUE HOMME DOIT CONNAÎTRE. POUR MOI, C'EST UNE EXPÉRIENCE EXTRAORDINAIRE. ON DEVRAIT ÊTRE RECONNAISSANT.",
+"CE QUI COMPTE, CE NE SONT PAS LES INDIVIDUS MAIS LE COLLECTIF.",
+]
+
+            function id1(){
+                var randomIndex= Math.floor(Math.random()*names.length);
+                var randomName = names[randomIndex];
+                document.getElementById("demo").innerHTML = "NELSON MANDELA:"+ randomName;
+            }
+    
+    
+     </script>
+</body>
+</html>
